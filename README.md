@@ -36,7 +36,7 @@ THEN I am presented with a responsive layout that adapts to my viewport
 
 Here is a screenshot of my portfolio with a live webpage link for you to check out!
 
-![My Portfolio](assets\images\screenshot.png "Screenshot")
+![My Portfolio](/assets/Images/Portfolio.png "Screenshot")
 
 ## Usage
 
