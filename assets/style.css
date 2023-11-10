@@ -141,12 +141,15 @@ body {
 .project-column {
   display: flex;
   flex-direction: column;
-  flex: 1;
+  align-items: center;
+  text-align: center;
 }
 
 .project-img {
-  width: 100%;
-  object-fit: cover;
+  width: 50%;
+  height: auto;
+  display: block; 
+  margin: 0 auto; 
 }
 
 .project-row-2 {
@@ -163,7 +166,7 @@ body {
 }
 
 .projects h4,
-.projects p { /* Consolidate common styles for headings and paragraphs */
+.projects p {
   color: #2d2e32;
   font-family: Poppins, sans-serif;
 }
