@@ -1,7 +1,8 @@
 # Martin Estrada's Portfolio
-This is my portfolio website. It contains information about me, my education, skill sets, hobbies. It also contains information about all the projects which I have done and my contact information.
 
-For source code, visit my Github Repo @ [Github] (https://github.com/mxrtinee/My-Portfolio)
+## Description
+
+This is my portfolio website. It contains information about me, my education, skill sets, hobbies. It also contains information about all the projects which I have done and my contact information.
 
 ## User Story
 
@@ -13,8 +14,6 @@ SO THAT I can review samples of their work and assess whether they're a good can
 
 
 ## Acceptance Criteria
-
-Here are the critical requirements necessary to develop a portfolio that satisfies a typical hiring manager’s needs:
 
 ```
 GIVEN I need to sample a potential employee's previous work
@@ -32,12 +31,29 @@ WHEN I resize the page or view the site on various screens and devices
 THEN I am presented with a responsive layout that adapts to my viewport
 ```
 
+## Table of Contents
+- [Description](#description)
+- [User Story](#user-story)
+- [Acceptance Criteria](#acceptance-criteria)
+- [Screenshot](#screenshot)
+- [Usage](#usage)
+- [License](#license)
+- [Questions](#questions)
+
 ## Screenshot
 
 Here is a screenshot of my portfolio with a live webpage link for you to check out!
 
-![My Portfolio](/assets/Images/Portfolio.png "Screenshot")
+[![My Portfolio](/assets/Images/Portfolio.png)](https://mxrtinee.github.io/My-Portfolio/)
 
 ## Usage
 
 This portfolio was created for potential employers could look at and learn something about me. 
+
+## License
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses) This project is licensed under the MIT License.
+
+## Questions
+If you have any questions or encounter any issues, please feel free to [open an issue](https://github.com/mxrtinee/My-Portfolio/issues) or contact me directly:<br>
+GitHub: [Mxrtinee](https://github.com/Mxrtinee)<br>
+Email: [hello@martinestrada.dev](mailto:hello@martinestrada.dev)
