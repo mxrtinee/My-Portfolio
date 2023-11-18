@@ -6,9 +6,11 @@
 }
 
 /* Global styles */
-body {
+body, html {
   font-family: Mulish, sans-serif;
   background-color: #fff;
+  height: 100%;
+  margin: 0;
 }
 
 :root {
@@ -40,12 +42,19 @@ body {
 
 .navbar__logo {
   cursor: pointer;
+  margin: 0;
+  color: #2d2e32;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  transition: all 0.23s;
+  font-weight: 600;
 }
 
 .navbar__links {
   color: #2d2e32;
   font-weight: 600;
   text-decoration: none;
+  transition: color 0.3s ease;
   transition: all 0.23s;
 }
 
@@ -53,10 +62,21 @@ body {
   color: var(--primary);
 }
 
+.navbar__logo:hover {
+  color: var(--primary);
+}
+
+/* Hamburger menu styles */
 .mobile-menu {
-  cursor: pointer;
   display: none;
+  cursor: pointer;
   font-size: 2.3rem;
+}
+
+.navbar__content.active {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 /* About Section */
@@ -65,9 +85,9 @@ body {
   padding: 15rem 0;
 }
 
-.about__container { /* Add a class for the container */
+.about__container {
   margin: 0 auto;
-  max-width: 107rem;
+  max-width: 110rem;
   padding: 0 4rem;
 }
 
@@ -86,6 +106,7 @@ body {
   border-radius: 1.7rem;
   height: 450px;
   width: 350px;
+  margin-right: 50px;
 }
 
 .text-side h3 {
@@ -110,6 +131,57 @@ body {
   font-size: 1.7rem;
   font-weight: 500;
   line-height: 1.5;
+}
+
+/* Skills Section */
+.skills {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f5f5;
+  padding: 50px 0;
+  height: 100vh;
+}
+
+.skills__container {
+  text-align: center;
+}
+
+.skill-badge {
+  display: inline-block;
+  padding: 8px 16px;
+  margin: 8px;
+  background-color: #147efb;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* PROJECTS SECTION */
+
+#projects {
+  position: relative;
+}
+
+.color-container {
+  border-color: rgb(163, 163, 163);
+  background: rgb(250, 250, 250);
+}
+
+.project-img {
+  border-radius: 2rem;
+  width: 90%;
+  height: 90%;
+}
+
+.project-title {
+  margin: 1rem;
+  color: black;
+}
+
+.project-btn {
+  color: black;
+  border-color: rgb(163, 163, 163);
 }
 
 /* Project Section */
@@ -208,7 +280,7 @@ body {
 }
 
 .contact a {
-  margin: 50px;
+  margin: 10px;
   padding: 80px 1px;
   text-decoration: none;
   font-size: 1.3rem;
@@ -252,16 +324,12 @@ footer h3 {
 }
 
 /* Media Queries */
-
 @media (max-width: 767px) {
-  /* Mobile-first media query styles */
-
-  /* Navbar */
   .navbar__container {
     margin: auto;
-   padding: 20px 20px; /* Adjust padding for smaller screens */
-   display: flex;
-   flex-direction: column;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
   }
 
   .navbar__content {
@@ -272,14 +340,27 @@ footer h3 {
 
   .navbar__logo {
     font-size: 24px;
-    margin-bottom: 10px; /* Add some space below the logo on smaller screens */
+    margin-bottom: 10px;
   }
 
   .mobile-menu {
-    display: block; /* Show the mobile menu icon on smaller screens */
+    display: block;
   }
 
-  /* About Section */
+  .navbar__content {
+    display: none;
+  }
+
+  .navbar__content.active {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navbar__links {
+    padding: 10px;
+    text-align: center;
+  }
+
   .about-content {
     width: 100%;
     display: flex;
@@ -301,14 +382,13 @@ footer h3 {
     line-height: 1.6;
   }
 
-  /* Project Section */
   .project-row,
   .project-row-2 {
     flex-direction: column;
   }
 
   .project-column {
-    margin-bottom: 2rem; /* Add some spacing between project columns on smaller screens */
+    margin-bottom: 2rem;
   }
 
   .project-img {
@@ -316,13 +396,109 @@ footer h3 {
     height: auto;
   }
 
-  /* Contact Me Section */
   .contact__content {
     text-align: center;
   }
 
-  /* Footer Section */
   footer {
     padding: 3rem 0;
+  }
+}
+
+/* Center the form on the page */
+form {
+  max-width: 500px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style form labels */
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #2d2e32;
+}
+
+/* Style form inputs and textarea */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Style the submit button */
+button {
+  background-color: #147efb;
+  color: #fff;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Hover effect for the submit button */
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+  form {
+    width: 80%;
+  }
+
+  .skill-badge {
+    font-size: 12px;
+  }
+}
+
+/* Media Queries */
+@media screen and (max-width: 1400px) {
+  /* Adjustments for screens 1200 pixels or less */
+  .about-content {
+    flex-direction: column-reverse;
+  }
+
+  .img-side__main-img {
+    width: 100%;
+  }
+
+  .text-side {
+    width: 100%;
+    text-align: center;
+  }
+
+  .text-side h4 {
+    margin-bottom: 1rem;
+  }
+
+  .text-side p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .project-row,
+  .project-row-2 {
+    flex-direction: column;
+  }
+
+  .project-column {
+    margin-bottom: 2rem;
+  }
+
+  .project-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
   }
 }

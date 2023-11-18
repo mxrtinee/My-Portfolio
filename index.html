@@ -1,131 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
-  <html>
-    <head>
-      <title>Martin Estrada | Full Stack Developer</title>
-      <meta charset="UTF-8"/>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-      <link rel="stylesheet" type="text/css" href="./assets/style.css">
-      </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Martin Estrada | Full Stack Developer</title>
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="script.js"></script>
+</head>
 
-      <!-- Navbar Link Section -->
-      <nav class="navbar">
-        <div class="navbar__container">
-          <h3 href="/" id="navbar__logo">Martin.Estrada</h3>
-          <ul class="navbar__content">
-            <li class="navbar__item">
-              <a href="#about" class="navbar__links">About</a>
-            </li>
-            <li class="navbar__item">
-              <a href="#projects" class="navbar__links">Work</a>
-            </li>
-            <li class="navbar__item">
-              <a href="#contact" class="navbar__links">Contact Me</a>
-            </li>
-            <li class="navbar__item">
-              <a href="https://drive.google.com/file/d/1aavKAdfuj--AOEV_tjyuBT22WcSe682T/view?usp=sharing" class="navbar__links">Resume</a>
-            </li>
-          </ul>
+<body>
+
+  <!-- Navbar Link Section -->
+  <nav class="navbar">
+    <div class="navbar__container">
+      <a href="/" class="navbar__logo">Martin.Estrada</a>
+      <ul class="navbar__content">
+        <li class="navbar__item">
+          <a href="#about" class="navbar__links">About</a>
+        </li>
+        <li class="navbar__item">
+          <a href="#projects" class="navbar__links">Work</a>
+        </li>
+        <li class="navbar__item">
+          <a href="#contact" class="navbar__links">Contact Me</a>
+        </li>
+        <li class="navbar__item">
+          <a href="https://drive.google.com/file/d/1aavKAdfuj--AOEV_tjyuBT22WcSe682T/view?usp=sharing"
+            class="navbar__links">Resume</a>
+        </li>
+      </ul>
+      <!-- Hamburger menu button -->
+      <div class="mobile-menu">&#9776;</div>
+    </div>
+  </nav>
+
+  <!-- About me Section -->
+  <section class="about" id="about">
+    <div class="about__container">
+      <div class="about-content">
+        <div class="img-side">
+          <img src="./assets/Images/martin.jpg" alt="me" class="img-side__main-img">
         </div>
-      </nav>
-    <body> 
+        <div class="text-side">
+          <h3>About Me</h3>
+        <h4>Greetings! I'm Martin Estrada</h4>
+        <p>
+          I'm a passionate Full Stack Developer dedicated to creating seamless digital experiences. My journey in the realm of web development has equipped me with a versatile toolkit encompassing HTML, CSS, and JavaScript.
+        </p>
+        <p>
+          <strong>Why work with me?</strong> I thrive on turning ideas into interactive and responsive websites. With a keen eye for design and a commitment to user-centric solutions, I bring concepts to life that not only meet but exceed expectations.
+        </p>
+        <p>
+          <strong>What sets me apart?</strong> Beyond the realms of HTML5, CSS3, and JavaScript, I specialize in the MERN (MongoDB, Express.js, React, Node.js) stack. This enables me to build robust, scalable, and dynamic web applications.
+        </p>
+        <p>
+          <strong>Continuous Learning:</strong> In the ever-evolving landscape of technology, I am committed to staying at the forefront. Exploring new frameworks, embracing best practices, and adopting emerging technologies are integral parts of my journey.
+        </p>
+        <p>
+          <strong>Let's Collaborate:</strong> Whether you have a specific project in mind or are exploring the possibilities of digital transformation, I'm ready to collaborate. Let's embark on a journey to elevate your web presence and create something extraordinary.
+        </p>
+        <p>
+          Thank you for considering me as your Full Stack Developer. Let's turn your vision into a digital reality!
+        </p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-      <!-- About me Section -->
-      <section class="about" id="about">
-        <div class="about__container">
-                  <div class="about-content">
-                    <div class="img-side">
-                      <img src="./assets/Images/martin.jpg" alt="me" class="img-side__main-img">
-                    </div>
-                    <div class="text-side">
-                      <h3>About me</h3>
-                      <h4>Hi my name is Martin Estrada</h4>
-                      <p>As a Entry-Level Full-Stack Developer, I possess an impressive arsenal of skills in HTML, CSS & JavaScript. I excel in designing and maintaining responsive websites that offer a smooth user experience. I also joined a six month Full-Stack Bootcamp hosted by the University of Oregon.</p>
-                    </div>
-                     </div>
-                    </div>
-                  </section>
+  <!-- Skills Section -->
+<section class="skills" id="skills">
+  <div class="skills__container">
+    <h3>Skills and Tools</h3>
+    <div class="skill-badge" data-skill="HTML5">HTML5</div>
+    <div class="skill-badge" data-skill="CSS3">CSS3</div>
+    <div class="skill-badge" data-skill="JavaScript">JavaScript</div>
+    <div class="skill-badge" data-skill="Node.js">Node.js</div>
+    <div class="skill-badge" data-skill="Express">Express</div>
+    <div class="skill-badge" data-skill="MongoDB">MongoDB</div>
+    <div class="skill-badge" data-skill="MySQL">MySQL</div>
+    <div class="skill-badge" data-skill="NoSQL">NoSQL</div>
+    <div class="skill-badge" data-skill="React">React</div>
+    <div class="skill-badge" data-skill="Git">Git</div>
+    <div class="skill-badge" data-skill="Git Bash">Git Bash</div>
+    <div class="skill-badge" data-skill="ORM">ORM</div>
+    <div class="skill-badge" data-skill="MVC">MVC</div>
+    <div class="skill-badge" data-skill="Computer Science for JS">Computer Science for JS</div>
+    <div class="skill-badge" data-skill="PWA">PWA</div>
+    <div class="skill-badge" data-skill="MERN Stack">MERN Stack</div>
+    <div class="skill-badge" data-skill="State Management">State Management</div>
+  </div>
+</section>
 
-                  <!-- Project Section -->
-                  <section class="projects section "id="projects">
-                    <div class="projects__container">
-                    <div>
-                      <h3>Work</h3>
-                    <a>
-                      <a href="https://lundj227.github.io/movie-nest/"><img class="project-img" src="./assets/Images/MovieNest.png" alt="FrontEnd Project"></a>
-                    </div>
-                          <div class="article-preview">
-                      <h4>MovieNest</h4>
-                        <p>The Movie Search App is a user-friendly web application that allows movie enthusiasts to search for movies, view their details, and save their favorite movies. It provides an easy way to discover new movies and keep track of movie preferences.</p>
-                    </div>
-                </div>
-                <div class="project-row">
-                <div class="project-column">
-                    <div>
-                      <a href=""><img class="project-img" src="./assets/Images/Fast Lane Rental.PNG" alt="Full-Stack Project"></a>
-                    </div>
-                    <div class="article-preview">
-                        <h4>Fast Lane Rentals</h4>
-                        <p> Fast Lane Rentals is a car rental app that makes it simpler for you to pick a car, rent it and pay for it. All you need to rent a car, is to be of leagal driving age and obviously have a driver's license...for insurance purposes. This is car rental app meant to make your life a tad bit easier. </p>
-                    </div>
-                </div>
-                <div class="project-column">            
-                    <div>
-                      <a href="https://www.google.com/"><img class="project-img" src="https://img.freepik.com/free-photo/beautiful-paradise-island-with-beach-sea_74190-1023.jpg?w=1800&t=st=1687169691~exp=1687170291~hmac=7a65a4e5b2eb374e94e17fd7fb2ab0d1b7b7aaf83078cd62ed5d0a84b66d5beb" alt="Project 3"></a>
-                          </div>
-                        <h4>Project 3</h4>
-                        <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent in mauris eu tortor porttitor accumsan. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent in mauris eu tortor porttitor accumsan.</p>
-                    </div>
-                  </div>
-                <div class="project-row">
-                <div class="project-column"> 
-                 <div>
-                  <a href="https://www.google.com/"><img class="project-img"
-                            src="https://img.freepik.com/free-photo/empty-wood-chair-table-outdoor-patio-with-beautiful-tropical-beach-sea_74190-9961.jpg?w=1800&t=st=1687169720~exp=1687170320~hmac=0a77994214a9019510f28af43dab452ada527e96585d6e7f563a09995598851e" alt="Project 4"></a>
-                           </div>
-                    <div>
-                    <div>
-                        <h4>Project 4</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent in mauris eu tortor porttitor accumsan. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent in mauris eu tortor porttitor accumsan.</p>
-                    </div>
-                </div>
-                </div>
-                <div class="project-column"> 
-                 <div>
-                        <a href="https://www.google.com/"> <img class="project-img"
-                            src="https://img.freepik.com/free-photo/view-mountains-landscape-huesca_1398-5217.jpg?w=2000&t=st=1687169991~exp=1687170591~hmac=aa445998f8b6570cab3abc9d68853ab80ba944475fcbc05c70c6061f967ab9f7" alt="Project 5"></a>
-                          </div>
-                    <div>
-                        <h4>Project 5</h4>
-                        <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent in mauris eu tortor porttitor accumsan. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent in mauris eu tortor porttitor accumsan. </p>
-                    </div>
-                </div>
-                  </div>
-                </div>
-                  </section>
+<!-- Project Section -->       
+<section class="projects section "id="projects">          
+  <div class="projects__container">            
+    <div>             
+      <h3>Work</h3>        
+      <a>           
+        <a href="https://lundj227.github.io/movie-nest/"><img class="project-img" src="./assets/Images/MovieNest.png" alt="FrontEnd Project"></a>          
+      </div>               
+      <div class="article-preview">        
+        <h4>MovieNest</h4>    
+        <p>The Movie Search App is a user-friendly web application that allows movie enthusiasts to search for movies, view their details, and save their favorite movies. It provides an easy way to discover new movies and keep track of movie preferences.</p>  
+      </div>             
+    </div>              
+    <div class="project-row">             
+      <div class="project-column">                   
+        <div>                    
+          <a href=""><img class="project-img" src="./assets/Images/Fast Lane Rental.PNG" alt="Full-Stack Project"></a>                  
+        </div>           
+        <div class="article-preview">                      
+          <h4>Fast Lane Rentals</h4>         
+          <p> Fast Lane Rentals is a car rental app that makes it simpler for you to pick a car, rent it and pay for it. All you need to rent a car, is to be of leagal driving age and obviously have a driver's license...for insurance purposes. This is car rental app meant to make your life a tad bit easier. </p>   
+        </div>  
+      </div>   
+      <div class="project-column">         
+        <div>         
+          <a href="https://www.google.com/"><img class="project-img" src="https://img.freepik.com/free-photo/beautiful-paradise-island-with-beach-sea_74190-1023.jpg?w=1800&t=st=1687169691~exp=1687170291~hmac=7a65a4e5b2eb374e94e17fd7fb2ab0d1b7b7aaf83078cd62ed5d0a84b66d5beb" alt="Project 3"></a>            
+        </div>           
+        <h4>Project 3</h4>          
+        <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent in mauris eu tortor porttitor accumsan. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent in mauris eu tortor porttitor accumsan.</p>      
+      </div>    
+    </div>  
+    <div class="project-row">   
+      <div class="project-column">     
+        <div>       
+          <a href="https://www.google.com/">
+            <img class="project-img" src="https://img.freepik.com/free-photo/empty-wood-chair-table-outdoor-patio-with-beautiful-tropical-beach-sea_74190-9961.jpg?w=1800&t=st=1687169720~exp=1687170320~hmac=0a77994214a9019510f28af43dab452ada527e96585d6e7f563a09995598851e" alt="Project 4">         
+          </a>
+        </div>
+        <div>
+          <div>       
+            <h4>Project 4</h4>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent in mauris eu tortor porttitor accumsan. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent in mauris eu tortor porttitor accumsan.</p>  
+          </div>
+        </div>            
+      </div>            
+      <div class="project-column">               
+        <div>                      
+          <a href="https://www.google.com/">
+            <img class="project-img" src="https://img.freepik.com/free-photo/view-mountains-landscape-huesca_1398-5217.jpg?w=2000&t=st=1687169991~exp=1687170591~hmac=aa445998f8b6570cab3abc9d68853ab80ba944475fcbc05c70c6061f967ab9f7" alt="Project 5">
+          </a>                         
+        </div>                  
+        <div>                      
+          <h4>Project 5</h4>                       
+          <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent in mauris eu tortor porttitor accumsan. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent in mauris eu tortor porttitor accumsan. </p>          
+        </div>      
+      </div>         
+    </div>         
+  </div>           
+</section>
 
-                  <!-- Contact Me Section -->
-                  <section class="contact" id="contact">
-                    <div class="contact__container">
-                      <div class="contact-content">
-                      <h3>Contact Me</h3><br><br>
-                      <ul>
-                        <li><a href="mailto:hello@martinestrada.dev>"><EMAIL>EMAIL</a></li>
-                        <li><a href="https://www.linkedin.com/in/martineestrada/">LinkedIn</a></li>
-                        <li><a href="https://github.com/mxrtinee">Github</a></li>
-                        <li><a href="https://www.instagram.com/martin.developer/">Instagram</a></li>
-                        <li><a href="https://twitter.com/_martindev">Twitter</a></li>
-                      </ul>
-                      </div>
-                  </section>
+<!-- Contact Me Section -->
+  <section class="contact" id="contact">
+    <div class="contact__container">
+      <div class="contact-content">
+        <h3>Contact Me</h3><br><br>
+        <ul>
+          <li><a href="mailto:hello@martinestrada.dev">EMAIL</a></li>
+          <li><a href="https://www.linkedin.com/in/martineestrada/">LinkedIn</a></li>
+          <li><a href="https://github.com/mxrtinee">Github</a></li>
+          <li><a href="https://www.instagram.com/martin.developer/">Instagram</a></li>
+          <li><a href="https://twitter.com/_martindev">Twitter</a></li>
+        </ul>
+      </div>
+  </section>
+  <form id="contactForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
 
-                  <!-- Footer Section -->
-                  <footer>
-                    <div class="container">
-                   <div class="footer">
-                    <h3>Copyright © 2023. All rights are reserved</h3>
-                    </div>
-                   </div>
-                  </footer>
-                </body>
-                </html> 
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone">
+
+    <label for="subject">Subject:</label>
+    <input type="text" id="subject" name="subject">
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="4" required></textarea>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="container">
+      <div class="footer">
+        <h3>Copyright © 2023. All rights are reserved</h3>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
